@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+body {
+  background: #8e44ad;
+}
+.checkBox {
+  border: 5px solid #f39c12;
+  border-radius: 15px;
+  /* making center */
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 550px;
+
+  background: #ecf0f1;
+  box-shadow: 5px 5px 5px;
+}
+.checkBox :last-child {
+  color: red;
+}
+
+input:checked + p {
+  color: #8e44ad;
+  text-decoration: line-through;
+}
+input[type="checkbox"] {
+  margin: 10px;
+}
+
+p {
+  margin: 0;
+  padding: 10px;
+  font-size: 10px;
+
+  font-weight: 400;
+}
